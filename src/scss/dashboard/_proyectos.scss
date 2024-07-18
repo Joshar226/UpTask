@@ -1,0 +1,46 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+.no-proyectos {
+    a {
+        @include boton($indigo, $blanco) {
+            display: inline;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.listado-proyectos {
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    line-height: 2;
+
+    @include grid(1, 2rem);
+
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+
+    @include desktop {
+        @include grid(3, 3rem);
+    }
+
+    .proyecto {
+        background-color: lighten($indigo, 5%);
+        min-height: 12rem;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        border-radius: .5rem;
+
+        a {
+            color: $blanco;
+        }
+
+        &:hover {
+            background-color: darken($indigo, 5%);
+        }
+    }
+}

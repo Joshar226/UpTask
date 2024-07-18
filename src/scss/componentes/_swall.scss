@@ -1,0 +1,9 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+.swal2-styled {
+    display: inline;
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}

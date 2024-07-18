@@ -1,0 +1,19 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+.olvide {
+    margin-top: 5rem;
+    .uptask {
+        @include textoDegradado($rosa)
+    }
+
+    input[type="submit"] {
+        @include boton($rosa, $blanco)
+    }
+
+    .acciones {
+        a {
+            color: $rosa;
+        }
+    }
+}

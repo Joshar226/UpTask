@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+h1, h2, h3 {
+    font-family: $fuente_headings;
+    margin: 0 0 calc($separacion / 2) 0 ;
+    font-weight: 900;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 5rem;
+}
+h3 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+    color: $gris;
+    line-height: 1.8;
+}
+
+.tagline {
+    font-family: $fuente_headings;
+    font-weight: 900;
+    color: $negro;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.descripcion-pagina {
+    text-align: center;
+}

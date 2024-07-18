@@ -1,0 +1,50 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+.dashboard {
+    background-color: $grisClaro;
+
+    @include tablet {
+        display: flex;
+        height: 100vh;
+    }
+
+    .principal {
+        flex: 1;
+        overflow: scroll;
+    }
+
+    .contenido {
+        padding: 2rem;
+        .nombre-pagina {
+            font-size: 4.5rem;
+            text-align: center;
+            color: $indigo;
+        }
+    }
+
+    .formulario {
+        input:not([type="submit"]) {
+            background-color: $blanco;
+            border: 1px lighten($gris, 40%) solid;
+            border-radius: 1rem;
+        }
+
+        input[type="submit"] {
+            @include boton($indigo, $blanco) {
+                padding: 1.5rem 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .enlace {
+        color: $indigo;
+        &:hover {
+            color: darken($indigo, 20%);
+        }
+    }
+}

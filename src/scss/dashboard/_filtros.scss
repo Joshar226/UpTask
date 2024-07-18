@@ -1,0 +1,41 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+.filtros {
+    background-color: lighten($blanco, 20%);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    .filtros-inputs {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+
+    h2 {
+        color: $indigo;
+        font-size: 2.8rem;
+        @include tablet {
+            margin: 0;
+        }
+    }
+
+    .campo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        @include tablet {
+            margin: 0;
+        }
+    }
+
+    input[type="radio"] {
+        accent-color: $indigo;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
