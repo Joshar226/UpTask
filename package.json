@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "gulp"
   },
+  "engines": { "node": "18.x" },
   "license": "ISC",
   "devDependencies": {
     "gulp": "^5.0.0",
